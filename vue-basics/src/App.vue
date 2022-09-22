@@ -1,6 +1,4 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
 import Navbar from "./components/Navbar.vue";
 import Foot from "./components/Foot.vue";
 import Posts from "./components/Posts.vue";
@@ -29,34 +27,23 @@ header {
 
 footer {
   line-height: 1.5;
+  margin-bottom: 50px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    justify-content: center;
+    
   }
 
 footer {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    justify-content: center;
+    margin-top: 150px;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
 }
 </style>
