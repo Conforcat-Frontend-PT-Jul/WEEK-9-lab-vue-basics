@@ -4,15 +4,15 @@ import { ref, onMounted } from "vue";
 const mensaje = "Resultado en el footer:";
 const suma = ref();
 let isVisible = true;
-let isActive = true;
+let isActive = ref(true);
 
 onMounted(() => {
   console.log(suma.value);
 });
 
-var changeColor = function () {
-  isActive = false;
-};
+function changeColor() {
+  isActive.value = !isActive.value;
+}
 </script>
 
 <template>
@@ -21,7 +21,7 @@ var changeColor = function () {
   <h1 v-show="isVisible" :class="{ blackBackgroundColor: isActive }">
     Esto del Vue.js mola!
   </h1>
-  <button :click="changeColor">
+  <button @click="changeColor" type="button">
     Apretar para cambiar el recuadro de color
   </button>
 </template>
