@@ -101,7 +101,7 @@ ul {
 img {
   position: absolute;
   bottom: 5px;
-  left: 44%;
+  left: 47%;
   z-index: 99;
 }
 
