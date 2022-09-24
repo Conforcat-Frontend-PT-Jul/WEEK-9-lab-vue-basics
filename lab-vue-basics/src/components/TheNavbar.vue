@@ -32,10 +32,10 @@ const posts = [
     </ul>
   </nav>
   <ul>
-    <li v-for="(post, index) in posts" :key="post.message">
+    <li v-for="(post, index) in posts" :key="index">
       {{ message }} {{ index }}
       <ul>
-        <li v-for="(value, name) in post" :key="value">
+        <li v-for="(value, name) in post" :key="name">
           {{ name }}: {{ value }}
         </li>
       </ul>
