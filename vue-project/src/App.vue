@@ -3,6 +3,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import TheWelcome from "./components/TheWelcome.vue";
 import Navbar from "./components/Nav-bar.vue";
 import Footer from "./components/Footer-bar.vue";
+import Iteration2 from "./components/Iteration-two.vue";
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import Footer from "./components/Footer-bar.vue";
   </header>
   <Navbar />
   <main>
+    <Iteration2 />
     <!-- <TheWelcome /> -->
   </main>
   <Footer />
