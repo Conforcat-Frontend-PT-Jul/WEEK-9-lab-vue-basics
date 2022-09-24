@@ -26,9 +26,15 @@ const posts = [
 <template>
   <nav>
     <ul>
-      <li>{{ home }}</li>
-      <li>{{ projects }}</li>
-      <li>{{ contact }}</li>
+      <li>
+        <a href="#">{{ home }}</a>
+      </li>
+      <li>
+        <a href="#">{{ projects }}</a>
+      </li>
+      <li>
+        <a href="#">{{ contact }}</a>
+      </li>
     </ul>
   </nav>
   <ul>
@@ -44,7 +50,14 @@ const posts = [
 </template>
 
 <style scoped>
+nav {
+  width: 100%;
+  box-sizing: border-box;
+}
 @media (min-width: 1024px) {
+  nav {
+    background-color: antiquewhite;
+  }
   nav ul {
     display: flex;
     flex-direction: row;
@@ -52,6 +65,13 @@ const posts = [
   nav ul li {
     list-style: none;
     padding: 1rem;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(51, 63, 63, 0.897);
+  }
+  a:hover {
+    font-weight: bolder;
   }
 }
 </style>
