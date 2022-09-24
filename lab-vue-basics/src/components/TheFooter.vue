@@ -10,8 +10,9 @@ onMounted(() => {
   console.log(suma.value);
 });
 
-function changeColor() {
+function changeBox() {
   isActive.value = !isActive.value;
+  isVisible.value = !isVisible.value;
 }
 </script>
 
@@ -20,8 +21,8 @@ function changeColor() {
   <p ref="suma">{{ 2 + 2 }}</p>
   <div class="container" :class="{ blackBackgroundColor: isActive }">
     <h1 v-show="isVisible">Esto del Vue.js mola!</h1>
-    <button @click="changeColor" type="button">
-      Apretar para cambiar el recuadro de color
+    <button @click="changeBox" type="button">
+      Apretar para cambiar estilos del recuadro
     </button>
   </div>
 </template>
@@ -35,6 +36,7 @@ h1 {
   display: flex;
   flex-direction: column;
   background-color: rgba(15, 112, 15, 0.719);
+  padding: 2.5rem 0;
 }
 .blackBackgroundColor {
   background-color: black;
