@@ -4,6 +4,7 @@ import TheWelcome from "./components/TheWelcome.vue";
 import Navbar from "./components/Nav-bar.vue";
 import Footer from "./components/Footer-bar.vue";
 import Iteration2 from "./components/Iteration-two.vue";
+import Iteration3 from "./components/Iteration-three.vue";
 </script>
 
 <template>
@@ -23,6 +24,7 @@ import Iteration2 from "./components/Iteration-two.vue";
   <Navbar />
   <main>
     <Iteration2 />
+    <iteration3 />
     <!-- <TheWelcome /> -->
   </main>
   <Footer />
@@ -31,6 +33,7 @@ import Iteration2 from "./components/Iteration-two.vue";
 <style scoped>
 header {
   line-height: 1.5;
+  margin-top: 30px;
 }
 
 .logo {
