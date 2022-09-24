@@ -8,6 +8,6 @@ const message = "2 + 2 = ";
 
 <style scoped>
 p {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 </style>

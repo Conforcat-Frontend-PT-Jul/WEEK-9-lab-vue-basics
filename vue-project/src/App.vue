@@ -5,6 +5,7 @@ import Navbar from "./components/Nav-bar.vue";
 import Footer from "./components/Footer-bar.vue";
 import Iteration2 from "./components/Iteration-two.vue";
 import Iteration3 from "./components/Iteration-three.vue";
+import Iteration4 from "./components/Iteration-four.vue";
 </script>
 
 <template>
@@ -24,8 +25,9 @@ import Iteration3 from "./components/Iteration-three.vue";
   <Navbar />
   <main>
     <Iteration2 />
-    <iteration3 />
+    <Iteration3 />
     <!-- <TheWelcome /> -->
+    <Iteration4 />
   </main>
   <Footer />
 </template>

@@ -9,3 +9,9 @@ const visible = ref(true);
 
   <h1 v-if="visible">Hello, now you can see me...!</h1>
 </template>
+
+<style scoped>
+h1 {
+  margin-bottom: 50px;
+}
+</style>
