@@ -1,6 +1,6 @@
 <template>
     <div class="wraper">
-        <Navbar />
+        <NavBar />
 
         <FooterMain />
     </div>
@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue"
+import NavBar from "./components/NavBar.vue"
 import FooterMain from "./components/FooterMain.vue"
 export default {
-    components: {Navbar, FooterMain}
+    components: {NavBar, FooterMain}
 }
 </script>
 

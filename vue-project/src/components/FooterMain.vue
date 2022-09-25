@@ -1,23 +1,12 @@
 <template>
-  <footer>
-    <address>{{address}}</address>
-    <p v-html="operation"></p>
-  </footer>
+  <div class="wrapper">
+    <h1>FOOTER COMPONENT</h1>
+  </div>
 </template>
 
 <script>
 export default {
-    setup(){
-      const address = "c/ Rector Alemany 7"
-      const operation = 2+2
 
-
-        return{
-           address,
-           operation
-        }
-
-    }
 }
 </script>
 
