@@ -1,8 +1,17 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const hideMe = ref(true);
+</script>
 
 <template>
   <nav>
-    <img src="./../assets/logo.svg" alt="logo" width="125" height="125" />
+    <img
+      src="./../assets/logo.svg"
+      alt="logo"
+      width="125"
+      height="125"
+      @click="hideMe = !hideMe"
+    />
     <ul>
       <li>
         <a href="#">Home</a>
@@ -15,13 +24,15 @@
       </li>
     </ul>
     <img
-      v-if="!active"
+      v-if="hideMe"
       src="./../assets/logo.svg"
       alt="logo"
       width="125"
       height="125"
     />
   </nav>
+
+  <h1 v-if="hideMe">click 👆🏻 the logo</h1>
 </template>
 
 <style scoped>

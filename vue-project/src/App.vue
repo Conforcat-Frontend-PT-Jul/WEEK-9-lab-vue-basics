@@ -1,31 +1,12 @@
 <script setup>
-// import TheWelcome from "./components/TheWelcome.vue";
 import Navbar from "./components/Nav-bar.vue";
 import Footer from "./components/Footer-general.vue";
 import Iterations from "./components/Iterations-all.vue";
-// import MiTarjeta from "./components/MiTarjeta.vue";
-// import { ref } from "vue";
-
-// const mssg = ref("");
-
-// function cambiaTexto(text) {
-//   mssg.value = text;
-// }
 </script>
 
 <template>
   <Navbar />
   <Iterations />
-  <!-- <MiTarjeta />
-  <MiTarjeta /> -->
-  <div class="wrapper">
-    <HelloWorld :msg="mssg" />
-  </div>
-
-  <main>
-    <!-- <button @click="cambiaTexto()">Prueba</button> -->
-    <!-- <TheWelcome /> -->
-  </main>
   <Footer />
 </template>
 

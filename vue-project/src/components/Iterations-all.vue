@@ -9,6 +9,7 @@ const mssg = ref("the result is 4");
 function changeText(text) {
   mssg.value = text;
 }
+const hideMe = ref(true);
 
 const posts = [
   {
@@ -80,6 +81,8 @@ function changeColor() {
     height="125"
     :class="{ isHidden: isActive }"
   />
+  <button @click="hideMe = !hideMe">press me...</button>
+  <h5 v-if="hideMe">That´s all folks..!</h5>
 </template>
 
 <style scoped>
