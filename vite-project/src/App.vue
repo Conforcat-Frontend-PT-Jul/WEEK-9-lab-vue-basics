@@ -2,28 +2,32 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import FooterApp from './components/FooterApp.vue'
-import NavBar from './components/NavBar.vue';
-import SumOperationVue from './components/SumOperation.vue';
-
-
+import HeaderComponent from './components/HeaderComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
+import ConditionComponent from './components/ConditionComponent.vue'
+import BlogComponent from './components/BlogComponent.vue'
 /*export default {
+  name: 'App',
   components: {
-    NavBar,
-    FooterApp,
-    SumOperation,
+    HeaderComponent,
+    FooterComponent,
+    HelloWorld
   },
-};*/
+}*/
 </script>
 
 <template>
-  <NavBar/>
-  <FooterApp/>
-  <SumOperation/>
+  <div id="app">
+    <HeaderComponent></HeaderComponent>
+    <HelloWorld></HelloWorld>
+    <BlogComponent></BlogComponent>
+    <ConditionComponent></ConditionComponent>
+    <FooterComponent></FooterComponent>
+  </div>
 </template>
 
 <style scoped>
-.logo {
+/*.logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -33,5 +37,5 @@ import SumOperationVue from './components/SumOperation.vue';
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
-}
+}*/
 </style>
