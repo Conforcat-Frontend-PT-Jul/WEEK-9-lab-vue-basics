@@ -2,6 +2,8 @@
   <div class="wrapper">
     <h1>FOOTER COMPONENT</h1>
 
+    <!-- ITERATION 4 -->
+
     <ul>
       <li v-for="(post, num) in posts" :key="num">
         Post num {{num}}:
@@ -13,15 +15,21 @@
       </li>
     </ul>
 
-  </div>
+    <!-- ITERATION 5 -->
+
+    <div class="square" :class="{rounded}"></div>
+    <button @click="swapColor">SWAP!</button>
+
+  </div>  
 </template>
 
 <script>
-
+import {ref} from 'vue';
 export default {
   setup(){
-
     
+    // ITERATION 4
+
     const posts = [
       {
         title: "Best anime fights",
@@ -40,15 +48,17 @@ export default {
       }
     ]
 
+    // ITERATION 5
 
-
-
-
-
-
-
+    let rounded = ref(false);
+    const swapColor = () => {
+      return rounded.value = !rounded.value
+    }
+    
     return{
       posts,
+      swapColor,
+      rounded
     }
   }
 }
@@ -58,4 +68,19 @@ export default {
   h1{
     margin-top: 100px;
   }
+
+  .square{
+    background-color: #4a4e69;
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .rounded{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #ffc300;
+  }
+
 </style>

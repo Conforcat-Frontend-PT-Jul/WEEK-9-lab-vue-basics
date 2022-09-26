@@ -17,8 +17,9 @@
     <label for="favSerie">What's your fauvorite serie?</label>
     <br>
     <input type="text" id="fav-serie" name="fav-serie" v-model="favSerie">
-    <p v-if="favSerie.length > 0">Also, I'm a fan of {{favSerie}}</p>
+    <p v-if="favSerie.length > 0">I'm a fan of {{favSerie}}</p>
 
+    <!-- ESTO SE QUEDA A MEDIAS PORQUE NO ME HA ACABADO DE SALIR -->
     <!-- <fieldset>
       <legend>Which film you like the most?</legend>
       <div>
@@ -37,12 +38,6 @@
       <p v-show="ringsMessage">You shall not pass!!! </p>
       <p v-show="warsMessage">Srsly, am I your father?</p>
     </fieldset> -->
-
-
-
-    <!-- ITERATION 4 -->
-
-
   </div>
 </template>
 
@@ -84,10 +79,27 @@ export default {
     // let warsMessage = ref(false);
     // let checkedValue = "";
     // const checkFilm = () => {
-    //   if (checkedValue === "harry"){
-    //     return harryMessage.value = true;
-    //   }
+        // switch(checkedValue){
+          
+        //   case "harry":
+        //     harryMessage.value = true
+        //     ringsMessage.value = false
+        //     warsMessage.value = false
+        //     break;
 
+        //   case "rings":
+        //     harryMessage.value = false
+        //     ringsMessage.value = true
+        //     warsMessage.value = false
+        //     break;
+
+        //   case "wars":
+        //     harryMessage.value = false
+        //     ringsMessage.value = false
+        //     warsMessage.value = true
+        //     break;
+
+        // }
     // }    
 
 
