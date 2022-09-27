@@ -28,7 +28,8 @@ export default {
     </div>
   </header>
   <main>
-    <TheMain /></main>
+    <TheMain />
+  </main>
   <TheFooter />
 </template>
 
