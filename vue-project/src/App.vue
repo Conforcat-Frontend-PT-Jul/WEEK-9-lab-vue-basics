@@ -20,7 +20,6 @@ import ForLoop from "./components/ForLoop.vue";
     <br />
     <ForLoop />
     <br />
-    <ColourChange />
   </main>
 
   <TheFooter />
