@@ -10,7 +10,6 @@ import ForLoop from "./components/ForLoop.vue";
   <header>
     <NavBar />
     <br />
-    <div class="wrapper"></div>
   </header>
 
   <main class="wrapper">
