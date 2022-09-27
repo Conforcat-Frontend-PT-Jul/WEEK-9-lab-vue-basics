@@ -1,12 +1,15 @@
 <script>
-import TheNavbar from "./components/navbar.vue";
-import TheFooter from "./components/footer.vue";
+import TheNavbar from "./components/TheNavbar.vue";
+import TheMain from "./components/TheMain.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   name: "App",
   components: {
     TheNavbar,
+    TheMain,
     TheFooter,
+
   },
 };
 </script>
@@ -24,7 +27,8 @@ export default {
       <TheNavbar />
     </div>
   </header>
-  <main></main>
+  <main>
+    <TheMain /></main>
   <TheFooter />
 </template>
 
