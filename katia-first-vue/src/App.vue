@@ -1,16 +1,31 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
+import HideAndShow from "./components/HideAndShow.vue";
+import Titles from "./components/Titles.vue";
+import { ref } from "vue";
+
+const number = 3;
+const name = "Katia";
+function greetingKatia() {
+  return `Hello ${name}!`;
+}
+
+const ok = true;
 </script>
 
 <template>
-  <Navbar></Navbar>
+  <Navbar v-if="ok"></Navbar>
+  <div v-else>Navbar desappeared</div>
+
   <br />
-  <div>
-    <h1>{{ 2 + 5 }}</h1>
-  </div>
+  <div>{{ number + 1 }}</div>
+  <div>{{ greetingKatia() }}</div>
   <br />
-  <Footer></Footer>
+  <HideAndShow></HideAndShow>
+  <Titles></Titles>
+
+  <Footer />
 </template>
 
 <style scoped>
@@ -32,6 +47,9 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+#changeBcg {
+  background-color: aqua;
 }
 
 h1 {
@@ -56,5 +74,9 @@ p {
 a {
   font-weight: 500;
   text-decoration: none;
+}
+button {
+  width: 70px;
+  height: 40px;
 }
 </style>
