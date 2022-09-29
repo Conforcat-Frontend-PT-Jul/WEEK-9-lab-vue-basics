@@ -45,4 +45,21 @@ footer a:hover {
   row-gap: 2em;
   column-gap: 2em;
 }
+
+@media only screen and (min-width: 900px) {
+  /*FOOTER*/
+  footer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links-footer-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2em;
+    column-gap: 3em;
+  }
+}
 </style>

@@ -1,13 +1,15 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
-
-// const message = "";
 </script>
 
 <template>
   <Navbar></Navbar>
-  <span>{{ 2 + 5 }}</span>
+  <br />
+  <div>
+    <h1>{{ 2 + 5 }}</h1>
+  </div>
+  <br />
   <Footer></Footer>
 </template>
 

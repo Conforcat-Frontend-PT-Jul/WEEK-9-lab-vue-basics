@@ -35,4 +35,41 @@
   color: #6b708d;
   padding-left: 2em;
 }
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  h3,
+  q {
+    font-size: 24px;
+    line-height: 28px;
+    color: #6b708d;
+  }
+  p {
+    font-size: 17px;
+  }
+
+  .strong {
+    color: #292e47;
+  }
+  .strong span {
+    color: #6b708d;
+    font-size: 17px;
+  }
+
+  .navbar {
+    width: 80%;
+    text-shadow: -1px 6px 5px rgba(107, 112, 141, 0.7);
+  }
+
+  #navbar-logo {
+    filter: drop-shadow(-1px 6px 5px rgba(107, 112, 141, 0.7));
+  }
+}
 </style>
