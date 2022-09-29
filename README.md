@@ -28,7 +28,6 @@ Let's begin!
   $ npm start
   ```
 
-
 ## Submission
 
 - Upon completion, run the following commands:
@@ -41,9 +40,7 @@ Let's begin!
 
 - Create a Pull Request so that your TAs can check your work.
 
-
 <!-- ## Getting Started -->
-
 
 ## Instructions
 
@@ -56,7 +53,6 @@ One of the main advantages of Vue (or any other frontend framework) is how easy 
 You have to create a `navbar` component and a `footer` component, that you'll include in all your app's inner pages. Hint: if you import them in your App.vue component, all your inner pages will display them too.
 
 Right now, you don't need to worry about styling these components; just make sure they're working and you're free to advance to the next task.
-
 
 ### Iteration 2 | Display the result of a Javascript operation in a component's HTML
 
