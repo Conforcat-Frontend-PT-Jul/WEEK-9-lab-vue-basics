@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <div class="sum">
+    <div class="operation">
         <p>Sum 1: {{ 5 + 5 }} / </p>
         <p>Sum 2: {{ sumOperationA }} / </p>
         <p>Sum 3: {{ sumItems(5, 5) }} / </p>
@@ -25,7 +25,10 @@ export default {
 </template>
 
 <style>
-.sum {
+.operation {
+    display: flex;
+    justify-content: center;
     border: 1.5px solid rgb(0, 0, 0);
+    margin-bottom: 40px;
 }
 </style>
