@@ -46,7 +46,7 @@ Let's begin!
 
 
 ## Instructions
-
+cd vu
 ### Iteration 1 | Create a basic template structure inside a new project
 
 For this lab, you'll have to create a new Vue project in a new folder. You can choose which options you want to include, but remember to stick with Vue 2 for the moment being.
