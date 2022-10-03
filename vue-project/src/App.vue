@@ -7,6 +7,7 @@ import MyLoops from './components/MyLoops.vue'
 
 </script>
 
+
 <template>
   <div>
     <MyHeader msg="Hello" />
@@ -18,9 +19,9 @@ import MyLoops from './components/MyLoops.vue'
 </template>
 
 
-<style>
+<!-- <style>
 
-</style>
+</style> -->
 
 
 <!-- <style scoped>

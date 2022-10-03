@@ -7,6 +7,7 @@ defineProps({
 })
 </script>
         
+
 <template>
     <div id="myBody">
         <footer class="footerSection">

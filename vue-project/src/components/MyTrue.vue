@@ -20,6 +20,7 @@ export default {
     </div>
 
 </template>
+
 <style scoped>
 #myBody {
     text-align: center;

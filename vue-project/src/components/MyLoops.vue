@@ -15,6 +15,7 @@ const data = ref([
 ]);
 </script>
             
+
 <template>
     <div id="myBody">
         <li v-for="item in data">
@@ -23,8 +24,8 @@ const data = ref([
             <p>{{ item.content }}</p>
         </li>
     </div>
-</template>
-            
+</template>            
+
 <style scoped>
 #myBody {
     text-align: center;
